@@ -16,7 +16,7 @@
 						<?php 
 						}
                     ?>
-                    <form action = "/changeBD.php" method = "POST">
+                    <form action = "/handle.php" method = "POST">
                     <th><input type = "submit" name = "add" value = "добавить"><th>
                     </form>
 				</tr>
@@ -34,10 +34,8 @@
                                 }
                                 $id = $row[0];
                                 ?>
-                            <form action = "/changeBD.php" method = "POST">
-                            <td><input type = "submit" name = "change" value = "Изменить <?=$id?>" ></td>
-                            </form>
-                            <form action = "/edit.php" method = "POST">
+                            <form action = "/handle.php" method = "POST">
+                            <td><input type = "submit" name = "edit" value = "Изменить <?=$id?>" ></td>
                             <td><input type = "submit" name = "del" value = "Удалить <?=$id?>" ></td>
                             </form>
                             </tr>
