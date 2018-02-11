@@ -29,3 +29,26 @@ Easy work with books table
   +genre
   ````
   #### 2.update
+  Change row in table of books
+  ````
+  host1 POST /api.php, action=update
+  ````
+  Add new book in table of books
+  ###### Request have this fields
+  ````
+   +name
+  +author
+  +price
+  +genre
+  ````
+  #### 3.delete
+  Change row in table of books
+  ````
+  host1 POST /api.php, action=delete
+  ````
+  Add new book in table of books
+  ###### Request have this fields
+  ````
+   +id
+  ````
+  
