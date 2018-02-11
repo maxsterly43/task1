@@ -49,6 +49,6 @@ Easy work with books table
   Add new book in table of books
   ###### Request have this fields
   ````
-   +id
+   +codeBook
   ````
   
