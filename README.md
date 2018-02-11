@@ -16,7 +16,7 @@ Easy work with books table
   ````
 ### <li>Method POST /api.php
   Contains methods to add, change and delete rows in table of books
-  1. Add
+  #### 1. add
   ````
   host1 POST /api.php, action=add
   ````
@@ -28,4 +28,4 @@ Easy work with books table
   +price
   +genre
   ````
-  
+  #### 2.update
