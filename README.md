@@ -6,5 +6,10 @@ Easy work with books table
 ````
   host1 GET /api.php?action=read
 ````
-  
+  ###### Books have this fields
+  +codeBook
+  +name
+  +author
+  +price
+  +genre
 
