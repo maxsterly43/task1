@@ -1,11 +1,14 @@
 <?php
-    $host = "host1";
-    $user = "root";
-    $pass = "";
-    $dbase = "one_bd";
-    $connection = mysqli_connect($host , $user, $pass, $dbase);
-    if(!$connection){
-        print("connect db error: ".mysqli_connect_error()."<br>");
-        exit();
-    }
+$connection = mysqli_connect(
+	'host2.ru',
+	'root',
+	'jollyroger007',
+	'test_db');
+/**
+ * проверка подключения к базе данных
+ */
+if (!$connection) { 
+	echo "Код ошибки: ".mysqli_connect_error(); 
+	exit; 
+}
 ?>
