@@ -29,7 +29,7 @@ Easy work with books table
   +genre
   ````
   #### 2.update
-  Change row in table of books
+  Change selected row in table of books
   ````
   host1 POST /api.php, action=update
   ````
