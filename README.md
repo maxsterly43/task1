@@ -33,7 +33,6 @@ Easy work with books table
   ````
   host1 POST /api.php, action=update
   ````
-  Add new book in table of books
   ###### Request have this fields
   ````
    +name
@@ -42,11 +41,10 @@ Easy work with books table
   +genre
   ````
   #### 3.delete
-  Change row in table of books
+  Delete row in table of books
   ````
   host1 POST /api.php, action=delete
   ````
-  Add new book in table of books
   ###### Request have this fields
   ````
    +codeBook
