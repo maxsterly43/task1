@@ -10,7 +10,7 @@ Easy work with books table
   +price
   +genre
   ````
-  ####You can change, add, delete and get all records from the table of books.
+#### You can change, add, delete and get all records from the table of books.
 
   API contains methods:
   -----------------------------------
@@ -44,7 +44,7 @@ Contains methods to add, change and delete records in table of books
   +genre (book genre)
 
   ````
-  #####For example:
+  ##### For example:
   ````
   host2.ru POST /api.php
   {
@@ -75,7 +75,7 @@ Contains methods to add, change and delete records in table of books
   +price (book price)
   +genre (book genre)
   ````
-   #####For example:
+   ##### For example:
   ````
   host2.ru POST /api.php
   {
@@ -87,7 +87,7 @@ Contains methods to add, change and delete records in table of books
     genre:"Porn"
   }
   ````
-#####Returns:
+##### Returns:
     ````
     array data which contains status of operation
     ````
@@ -102,7 +102,7 @@ Contains methods to add, change and delete records in table of books
     +action (action for the server)
     +codeBook (id of deleting book)
   ````
-   #####For example:
+   ##### For example:
   ````
   host2.ru POST /api.php
   {
@@ -110,7 +110,7 @@ Contains methods to add, change and delete records in table of books
     codeBook:"12"
   }
   ````
-#####Returns:
+##### Returns:
     ````
     array data which contains status of operation and id of deleted book
     ````
