@@ -22,9 +22,9 @@ Easy work with books table
     host2.ru GET /api.php?action=read
   ````
   ##### Request have this fields
-    ````
-    +action
-    ````
+  ````
+    +action (action for the server)
+  ````
   ##### Returns:
     ````
     array data which contains all records from table of book
