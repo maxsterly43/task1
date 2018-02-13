@@ -18,6 +18,7 @@ Easy work with books table
   ### <li>Method GET /api.php
     Returns table of books in JSON.
   ##### For Example:
+  
   ````
     host2.ru GET /api.php?action=read
   ````
@@ -26,9 +27,9 @@ Easy work with books table
     +action (action for the server)
   ````
   ##### Returns:
-    ````
+  ````
     array data which contains all records from table of book
-    ````
+  ````
   
 ### <li>Method POST /api.php
 Contains methods to add, change and delete records in table of books
@@ -57,9 +58,9 @@ Contains methods to add, change and delete records in table of books
 
   ````
   #####Returns:
-    ````
+  ````
     array data which contains status of operation and added record
-    ````
+  ````
 
 #### 2.update
   Change selected record in table of books
@@ -75,7 +76,7 @@ Contains methods to add, change and delete records in table of books
   +price (book price)
   +genre (book genre)
   ````
-   ##### For example:
+  ##### For example:
   ````
   host2.ru POST /api.php
   {
