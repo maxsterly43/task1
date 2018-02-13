@@ -1,12 +1,8 @@
 SERVER API
 ============
 Easy work with books table
-### <li>Method GET /api.php?action=read
-  Returns table of books in JSON.
-````
-  host1 GET /api.php?action=read
-````
-  ###### Books have this fields
+
+###### Books have this fields
   ````
   +codeBook
   +name
@@ -14,39 +10,109 @@ Easy work with books table
   +price
   +genre
   ````
+####You can change, add, delete and get all records from the table of books.
+
+  API contains methods:
+  -----------------------------------
+
+  ### <li>Method GET /api.php
+    Returns table of books in JSON.
+  #####For Example:
+  ````
+    host2.ru GET /api.php?action=read
+  ````
+  ##### Request have this fields
+    ````
+    +action
+    ````
+  #####Returns:
+    ````
+    array data which contains all records from table of book
+    ````
+  
 ### <li>Method POST /api.php
-  Contains methods to add, change and delete rows in table of books
-  #### 1. add
-  ````
-  host1 POST /api.php, action=add
-  ````
-  Add new book in table of books
+Contains methods to add, change and delete records in table of books
+#### 1. add
+  Add record in table of books.
+
   ###### Request have this fields
   ````
-   +name
-  +author
-  +price
-  +genre
+  +action (action for the server)
+  +name (name of book)
+  +author (name author of book)
+  +price (book price)
+  +genre (book genre)
+
   ````
-  #### 2.update
-  Change selected row in table of books
+  #####For example:
   ````
-  host1 POST /api.php, action=update
+  host2.ru POST /api.php
+  {
+    action:"add",
+    name:"UnexpectedMeeting",
+    author:"Maksello",
+    price:"1488",
+    genre:"Porn"
+  }
+
+  ````
+  #####Returns:
+    ````
+    array data which contains status of operation and added record
+    ````
+
+#### 2.update
+  Change selected record in table of books
+  ````
+  host2.ru POST /api.php
   ````
   ###### Request have this fields
   ````
-   +name
-  +author
-  +price
-  +genre
+  +action (action for the server)
+  +codeBook (id of selected book)
+  +name (name of book)
+  +author (name author of book)
+  +price (book price)
+  +genre (book genre)
   ````
-  #### 3.delete
+   #####For example:
+  ````
+  host2.ru POST /api.php
+  {
+    action:"update",
+    codeBook:"12",
+    name:"UnexpectedMeeting",
+    author:"Maksello",
+    price:"1",
+    genre:"Porn"
+  }
+  ````
+#####Returns:
+    ````
+    array data which contains status of operation
+    ````
+
+#### 3.delete
   Delete row in table of books
   ````
-  host1 POST /api.php, action=delete
+  host2.ru POST /api.php
   ````
   ###### Request have this fields
   ````
-   +codeBook
+    +action (action for the server)
+    +codeBook (id of deleting book)
   ````
+   #####For example:
+  ````
+  host2.ru POST /api.php
+  {
+    action:"update",
+    codeBook:"12"
+  }
+  ````
+#####Returns:
+    ````
+    array data which contains status of operation and id of deleted book
+    ````
+  
   
