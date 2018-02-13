@@ -16,7 +16,8 @@ Easy work with books table
   -----------------------------------
 
   ### <li>Method GET /api.php
-    Returns table of books in JSON.
+  Returns table of books in JSON.
+  
   ##### For Example:
   
   ````
