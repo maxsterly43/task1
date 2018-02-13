@@ -17,7 +17,7 @@ Easy work with books table
 
   ### <li>Method GET /api.php
     Returns table of books in JSON.
-  #####For Example:
+  ##### For Example:
   ````
     host2.ru GET /api.php?action=read
   ````
@@ -25,7 +25,7 @@ Easy work with books table
     ````
     +action
     ````
-  #####Returns:
+  ##### Returns:
     ````
     array data which contains all records from table of book
     ````
