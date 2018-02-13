@@ -10,7 +10,7 @@ Easy work with books table
     +price
     +genre
   ````
-#### You can change, add, delete and get all records from the table of books.
+  #### You can change, add, delete and get all records from the table of books.
 
   API contains methods:
   -----------------------------------
@@ -43,7 +43,6 @@ Contains methods to add, change and delete records in table of books
     +author (name author of book)
     +price (book price)
     +genre (book genre)
-
   ````
   ##### For example:
   ````
