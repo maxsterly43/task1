@@ -55,7 +55,6 @@ Contains methods to add, change and delete records in table of books
     price:"1488",
     genre:"Porn"
   }
-
   ````
   ##### Returns:
   ````
