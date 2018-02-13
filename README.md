@@ -4,11 +4,11 @@ Easy work with books table
 
 ###### Books have this fields
   ````
-  +codeBook
-  +name
-  +author
-  +price
-  +genre
+    +codeBook
+    +name
+    +author
+    +price
+    +genre
   ````
 #### You can change, add, delete and get all records from the table of books.
 
@@ -38,11 +38,11 @@ Contains methods to add, change and delete records in table of books
 
   ###### Request have this fields
   ````
-  +action (action for the server)
-  +name (name of book)
-  +author (name author of book)
-  +price (book price)
-  +genre (book genre)
+    +action (action for the server)
+    +name (name of book)
+    +author (name author of book)
+    +price (book price)
+    +genre (book genre)
 
   ````
   ##### For example:
@@ -57,7 +57,7 @@ Contains methods to add, change and delete records in table of books
   }
 
   ````
-  #####Returns:
+  ##### Returns:
   ````
     array data which contains status of operation and added record
   ````
@@ -89,14 +89,14 @@ Contains methods to add, change and delete records in table of books
   }
   ````
 ##### Returns:
-    ````
+  ````
     array data which contains status of operation
-    ````
+  ````
 
 #### 3.delete
   Delete row in table of books
   ````
-  host2.ru POST /api.php
+    host2.ru POST /api.php
   ````
   ###### Request have this fields
   ````
@@ -105,15 +105,15 @@ Contains methods to add, change and delete records in table of books
   ````
    ##### For example:
   ````
-  host2.ru POST /api.php
-  {
-    action:"update",
-    codeBook:"12"
-  }
+    host2.ru POST /api.php
+    {
+      action:"update",
+      codeBook:"12"
+    }
   ````
 ##### Returns:
-    ````
+  ````
     array data which contains status of operation and id of deleted book
-    ````
+  ````
   
   
