@@ -119,7 +119,7 @@ $("#add").click(function(){
                 $('#myTable > tbody > tr:last').append('<td><button name = '+ item['codeBook'] + ' id = "ch">изменить</button></td>');
                 $('#myTable > tbody > tr:last').append('<td><button name = '+ item['codeBook'] + ' id = "del">удалить</button></td>');      
             }
-            $('span').text(data);    
+            $('span').text(data['status']);    
         },"json"
 	);
 })
@@ -147,7 +147,7 @@ $(document).delegate("#ch","click",function(){
             genre: $('input[id=genre'+ $(this).attr("name") +']').val(),
         },
         function(data) {
-            $('span').text(data);
+            $('span').text(data['status']);
         },"json"
 	);
 })
@@ -173,7 +173,7 @@ $(document).delegate("#del","click",function(){
         function(data) {
             if((data['status'])=='Success')
                 $("#myTable").find('#'+data['id'] +'').remove();
-            $('span').text(data);
+            $('span').text(data['status']);
         },"json"
     );
 })

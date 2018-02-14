@@ -4,33 +4,31 @@ Easy work with books table
 
 ###### Books have this fields
   ````
-    +codeBook
-    +name
-    +author
-    +price
-    +genre
+  +codeBook
+  +name
+  +author
+  +price
+  +genre
   ````
-  #### You can change, add, delete and get all records from the table of books.
+  ####You can change, add, delete and get all records from the table of books.
 
   API contains methods:
   -----------------------------------
 
   ### <li>Method GET /api.php
-  Returns table of books in JSON.
-  
-  ##### For Example:
-  
+    Returns table of books in JSON.
+  #####For Example:
   ````
     host2.ru GET /api.php?action=read
   ````
   ##### Request have this fields
-  ````
-    +action (action for the server)
-  ````
-  ##### Returns:
-  ````
+    ````
+    +action
+    ````
+  #####Returns:
+    ````
     array data which contains all records from table of book
-  ````
+    ````
   
 ### <li>Method POST /api.php
 Contains methods to add, change and delete records in table of books
@@ -39,13 +37,14 @@ Contains methods to add, change and delete records in table of books
 
   ###### Request have this fields
   ````
-    +action (action for the server)
-    +name (name of book)
-    +author (name author of book)
-    +price (book price)
-    +genre (book genre)
+  +action (action for the server)
+  +name (name of book)
+  +author (name author of book)
+  +price (book price)
+  +genre (book genre)
+
   ````
-  ##### For example:
+  #####For example:
   ````
   host2.ru POST /api.php
   {
@@ -55,11 +54,12 @@ Contains methods to add, change and delete records in table of books
     price:"1488",
     genre:"Porn"
   }
+
   ````
-  ##### Returns:
-  ````
+  #####Returns:
+    ````
     array data which contains status of operation and added record
-  ````
+    ````
 
 #### 2.update
   Change selected record in table of books
@@ -75,7 +75,7 @@ Contains methods to add, change and delete records in table of books
   +price (book price)
   +genre (book genre)
   ````
-  ##### For example:
+   #####For example:
   ````
   host2.ru POST /api.php
   {
@@ -87,32 +87,32 @@ Contains methods to add, change and delete records in table of books
     genre:"Porn"
   }
   ````
-##### Returns:
-  ````
+#####Returns:
+    ````
     array data which contains status of operation
-  ````
+    ````
 
 #### 3.delete
   Delete row in table of books
   ````
-    host2.ru POST /api.php
+  host2.ru POST /api.php
   ````
   ###### Request have this fields
   ````
     +action (action for the server)
     +codeBook (id of deleting book)
   ````
-   ##### For example:
+   #####For example:
   ````
-    host2.ru POST /api.php
-    {
-      action:"update",
-      codeBook:"12"
-    }
+  host2.ru POST /api.php
+  {
+    action:"update",
+    codeBook:"12"
+  }
   ````
-##### Returns:
-  ````
+#####Returns:
+    ````
     array data which contains status of operation and id of deleted book
-  ````
+    ````
   
   

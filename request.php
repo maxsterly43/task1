@@ -77,7 +77,7 @@ function get_last_book($mysqli){
 function add($mysqli, $data){
     $ch = check($data);
     if($ch!='complete')
-        return  json_encode($ch);
+        return  json_encode(array('status'=>$ch));
     $add = "INSERT INTO books(name, author, price, genre) 
     VALUES ('{$data['name']}', '{$data['author']}', '{$data['price']}', '{$data['genre']}')";
     $result = $mysqli->query($add) or die("Error".$mysqli->error); 
@@ -113,7 +113,7 @@ function del($mysqli, $data){
             'id'=>$data['codeBook'])
         );
     }else{
-        return json_encode("record with id = '".$data['codeBook']."' not found!");
+        return json_encode(array('status' => "record with id = '".$data['codeBook']."' not found!"));
     }
 }
 
@@ -125,7 +125,7 @@ function del($mysqli, $data){
  * For example:
  * 
   * ```php
- * $data = array('codeBook'=>'codeBook',name'=>'new_name', 'author'=>'new_author', 'price'=>'new_price', 'genre'=>'new_genre');
+ * $data = array('codeBook'=>'codeBook', name'=>'new_name', 'author'=>'new_author', 'price'=>'new_price', 'genre'=>'new_genre');
  * add($mysqli, $data);
  * ```
  * 
